@@ -13,6 +13,7 @@
 		3692B020256FFD4300126B4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3692B01F256FFD4300126B4D /* Preview Assets.xcassets */; };
 		3692B02A257000ED00126B4D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3692B029257000ED00126B4D /* ConfettiSwiftUI */; };
 		3692B02B257000ED00126B4D /* ConfettiSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 3692B029257000ED00126B4D /* ConfettiSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3692B035257011AF00126B4D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3692B034257011AF00126B4D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,7 @@
 		3692B01C256FFD4300126B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3692B01F256FFD4300126B4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3692B021256FFD4300126B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3692B034257011AF00126B4D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		3692B017256FFD4100126B4D /* ConfettiSwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3692B034257011AF00126B4D /* README.md */,
 				3692B018256FFD4100126B4D /* ConfettiSwiftUIDemoApp.swift */,
 				3692B01A256FFD4100126B4D /* ContentView.swift */,
 				3692B01C256FFD4300126B4D /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3692B035257011AF00126B4D /* README.md in Resources */,
 				3692B020256FFD4300126B4D /* Preview Assets.xcassets in Resources */,
 				3692B01D256FFD4300126B4D /* Assets.xcassets in Resources */,
 			);
