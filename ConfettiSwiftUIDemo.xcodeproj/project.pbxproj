@@ -55,6 +55,7 @@
 		3692B00C256FFD4100126B4D = {
 			isa = PBXGroup;
 			children = (
+				3692B034257011AF00126B4D /* README.md */,
 				3692B017256FFD4100126B4D /* ConfettiSwiftUIDemo */,
 				3692B016256FFD4100126B4D /* Products */,
 			);
@@ -71,7 +72,6 @@
 		3692B017256FFD4100126B4D /* ConfettiSwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3692B034257011AF00126B4D /* README.md */,
 				3692B018256FFD4100126B4D /* ConfettiSwiftUIDemoApp.swift */,
 				3692B01A256FFD4100126B4D /* ContentView.swift */,
 				3692B01C256FFD4300126B4D /* Assets.xcassets */,
