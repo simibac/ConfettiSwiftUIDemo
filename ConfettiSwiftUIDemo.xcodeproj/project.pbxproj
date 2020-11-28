@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3645D3F625728BB3001F5472 /* ExampleTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F525728BB3001F5472 /* ExampleTab.swift */; };
+		3645D3F825728BC3001F5472 /* ConfiguratorTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F725728BC3001F5472 /* ConfiguratorTab.swift */; };
+		3645D3FA25728C0F001F5472 /* MultiFireworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F925728C0F001F5472 /* MultiFireworkView.swift */; };
 		3692B019256FFD4100126B4D /* ConfettiSwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3692B018256FFD4100126B4D /* ConfettiSwiftUIDemoApp.swift */; };
 		3692B01B256FFD4100126B4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3692B01A256FFD4100126B4D /* ContentView.swift */; };
 		3692B01D256FFD4300126B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3692B01C256FFD4300126B4D /* Assets.xcassets */; };
@@ -31,6 +34,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3645D3F525728BB3001F5472 /* ExampleTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTab.swift; sourceTree = "<group>"; };
+		3645D3F725728BC3001F5472 /* ConfiguratorTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorTab.swift; sourceTree = "<group>"; };
+		3645D3F925728C0F001F5472 /* MultiFireworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiFireworkView.swift; sourceTree = "<group>"; };
 		3692B015256FFD4100126B4D /* ConfettiSwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfettiSwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3692B018256FFD4100126B4D /* ConfettiSwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiSwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		3692B01A256FFD4100126B4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +83,9 @@
 				3692B01C256FFD4300126B4D /* Assets.xcassets */,
 				3692B021256FFD4300126B4D /* Info.plist */,
 				3692B01E256FFD4300126B4D /* Preview Content */,
+				3645D3F525728BB3001F5472 /* ExampleTab.swift */,
+				3645D3F725728BC3001F5472 /* ConfiguratorTab.swift */,
+				3645D3F925728C0F001F5472 /* MultiFireworkView.swift */,
 			);
 			path = ConfettiSwiftUIDemo;
 			sourceTree = "<group>";
@@ -166,7 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3645D3F625728BB3001F5472 /* ExampleTab.swift in Sources */,
 				3692B01B256FFD4100126B4D /* ContentView.swift in Sources */,
+				3645D3FA25728C0F001F5472 /* MultiFireworkView.swift in Sources */,
+				3645D3F825728BC3001F5472 /* ConfiguratorTab.swift in Sources */,
 				3692B019256FFD4100126B4D /* ConfettiSwiftUIDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +374,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
 			requirement = {
-				branch = master;
+				branch = develop;
 				kind = branch;
 			};
 		};
