@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36227B91280B47F200DE9B53 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 36227B90280B47F200DE9B53 /* ConfettiSwiftUI */; };
 		3645D3F625728BB3001F5472 /* ExampleTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F525728BB3001F5472 /* ExampleTab.swift */; };
 		3645D3F825728BC3001F5472 /* ConfiguratorTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F725728BC3001F5472 /* ConfiguratorTab.swift */; };
 		3645D3FA25728C0F001F5472 /* MultiFireworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F925728C0F001F5472 /* MultiFireworkView.swift */; };
@@ -14,8 +15,6 @@
 		3692B01B256FFD4100126B4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3692B01A256FFD4100126B4D /* ContentView.swift */; };
 		3692B01D256FFD4300126B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3692B01C256FFD4300126B4D /* Assets.xcassets */; };
 		3692B020256FFD4300126B4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3692B01F256FFD4300126B4D /* Preview Assets.xcassets */; };
-		3692B02A257000ED00126B4D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3692B029257000ED00126B4D /* ConfettiSwiftUI */; };
-		3692B02B257000ED00126B4D /* ConfettiSwiftUI in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 3692B029257000ED00126B4D /* ConfettiSwiftUI */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3692B035257011AF00126B4D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3692B034257011AF00126B4D /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3692B02B257000ED00126B4D /* ConfettiSwiftUI in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,19 +49,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3692B02A257000ED00126B4D /* ConfettiSwiftUI in Frameworks */,
+				36227B91280B47F200DE9B53 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36369C33280B3A1300A45F1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36369C36280B3AF500A45F1A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		3692B00C256FFD4100126B4D = {
 			isa = PBXGroup;
 			children = (
+				36369C36280B3AF500A45F1A /* Packages */,
 				3692B034257011AF00126B4D /* README.md */,
 				3692B017256FFD4100126B4D /* ConfettiSwiftUIDemo */,
 				3692B016256FFD4100126B4D /* Products */,
+				36369C33280B3A1300A45F1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +130,7 @@
 			);
 			name = ConfettiSwiftUIDemo;
 			packageProductDependencies = (
-				3692B029257000ED00126B4D /* ConfettiSwiftUI */,
+				36227B90280B47F200DE9B53 /* ConfettiSwiftUI */,
 			);
 			productName = ConfettiSwiftUIDemo;
 			productReference = 3692B015256FFD4100126B4D /* ConfettiSwiftUIDemo.app */;
@@ -146,7 +160,7 @@
 			);
 			mainGroup = 3692B00C256FFD4100126B4D;
 			packageReferences = (
-				3692B028257000ED00126B4D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				36227B8F280B47F200DE9B53 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 			);
 			productRefGroup = 3692B016256FFD4100126B4D /* Products */;
 			projectDirPath = "";
@@ -370,20 +384,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3692B028257000ED00126B4D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+		36227B8F280B47F200DE9B53 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
 			requirement = {
-				branch = develop;
+				branch = master;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3692B029257000ED00126B4D /* ConfettiSwiftUI */ = {
+		36227B90280B47F200DE9B53 /* ConfettiSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3692B028257000ED00126B4D /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			package = 36227B8F280B47F200DE9B53 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
 			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */

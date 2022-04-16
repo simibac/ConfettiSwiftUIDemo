@@ -20,8 +20,9 @@ struct ContentView: View {
     var body: some View {
         TabView {
             ZStack{
-                Text("🎉").font(.system(size: 50)).onTapGesture(){counter1 += 1}
-                ConfettiCannon(counter: $counter1)
+                Text("🎉").font(.system(size: 50))
+                    .onTapGesture(){counter1 += 1}
+                    .confettiCannon(counter: $counter1)
             }
             .tabItem {
                 Image(systemName: "sparkles")
@@ -29,8 +30,10 @@ struct ContentView: View {
             }
             
             ZStack{
-                Text("🎊").font(.system(size: 50)).onTapGesture(){counter2 += 1}
-                ConfettiCannon(counter: $counter2, colors: [.red, .black], confettiSize: 20)
+                Text("🎊")
+                    .font(.system(size: 50))
+                    .onTapGesture(){counter2 += 1}
+                    .confettiCannon(counter: $counter2, colors: [.red, .black], confettiSize: 20)
             }
             .tabItem {
                 Image(systemName: "eyedropper")
