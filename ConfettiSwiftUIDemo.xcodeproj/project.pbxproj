@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3617F1DB282FE1BC00A36D1D /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3617F1DA282FE1BC00A36D1D /* ConfettiSwiftUI */; };
+		3617F1E0282FE9A000A36D1D /* configurator-preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3617F1DF282FE9A000A36D1D /* configurator-preview.gif */; };
 		3645D3F625728BB3001F5472 /* ExampleTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F525728BB3001F5472 /* ExampleTab.swift */; };
 		3645D3F825728BC3001F5472 /* ConfiguratorTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F725728BC3001F5472 /* ConfiguratorTab.swift */; };
 		3645D3FA25728C0F001F5472 /* MultiFireworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3645D3F925728C0F001F5472 /* MultiFireworkView.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3617F1DF282FE9A000A36D1D /* configurator-preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "configurator-preview.gif"; path = "../../../../Downloads/configurator-preview.gif"; sourceTree = "<group>"; };
 		3645D3F525728BB3001F5472 /* ExampleTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTab.swift; sourceTree = "<group>"; };
 		3645D3F725728BC3001F5472 /* ConfiguratorTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorTab.swift; sourceTree = "<group>"; };
 		3645D3F925728C0F001F5472 /* MultiFireworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiFireworkView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3617F1DC282FE83C00A36D1D /* files */ = {
+			isa = PBXGroup;
+			children = (
+				3617F1DF282FE9A000A36D1D /* configurator-preview.gif */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
 		36369C33280B3A1300A45F1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		3692B00C256FFD4100126B4D = {
 			isa = PBXGroup;
 			children = (
+				3617F1DC282FE83C00A36D1D /* files */,
 				36369C36280B3AF500A45F1A /* Packages */,
 				3692B034257011AF00126B4D /* README.md */,
 				3692B017256FFD4100126B4D /* ConfettiSwiftUIDemo */,
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3692B035257011AF00126B4D /* README.md in Resources */,
+				3617F1E0282FE9A000A36D1D /* configurator-preview.gif in Resources */,
 				3692B020256FFD4300126B4D /* Preview Assets.xcassets in Resources */,
 				3692B01D256FFD4300126B4D /* Assets.xcassets in Resources */,
 			);
