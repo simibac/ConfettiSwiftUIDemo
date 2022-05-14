@@ -15,10 +15,19 @@ struct ContentView: View {
     @State var counter4:Int = 0
     @State var counter5:Int = 0
     @State var counter6:Int = 0
+    @State var counter7:Int = 0
 
 
     var body: some View {
         TabView {
+            ZStack{
+                ConfiguratorTab()
+            }
+            .tabItem{
+                Image(systemName: "hammer")
+                Text("Configurator")
+            }
+            
             ZStack{
                 Text("🎉").font(.system(size: 50))
                     .onTapGesture(){counter1 += 1}
@@ -26,7 +35,7 @@ struct ContentView: View {
             }
             .tabItem {
                 Image(systemName: "sparkles")
-                Text("Emoji")
+                Text("Default")
             }
             
             ZStack{
@@ -42,7 +51,7 @@ struct ContentView: View {
             
             ZStack{
                 Text("🔁").font(.system(size: 50)).onTapGesture(){counter3 += 1}
-                ConfettiCannon(counter: $counter3, repetitions: 3, repetitionInterval: 0.7)
+                    .confettiCannon(counter: $counter3, repetitions: 3, repetitionInterval: 0.7)
             }
             .tabItem {
                 Image(systemName: "repeat")
@@ -51,7 +60,7 @@ struct ContentView: View {
             
             ZStack{
                 Text("🧨").font(.system(size: 50)).onTapGesture(){counter4 += 1}
-                ConfettiCannon(counter: $counter4, num: 50, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
+                    .confettiCannon(counter: $counter4, num: 50, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
             }
             .tabItem {
                 Image(systemName: "flame")
@@ -60,7 +69,7 @@ struct ContentView: View {
             
             ZStack{
                 Text("❤️").font(.system(size: 50)).onTapGesture(){counter5 += 1}
-                ConfettiCannon(counter: $counter5, confettis: [.text("❤️"), .text("💙"), .text("💚"), .text("🧡")])
+                    .confettiCannon(counter: $counter5, confettis: [.text("❤️"), .text("💙"), .text("💚"), .text("🧡")])
             }
             .tabItem {
                 Image(systemName: "suit.heart")
@@ -68,14 +77,26 @@ struct ContentView: View {
             }
             
             ZStack{
-                Text("💩").font(.system(size: 50)).onTapGesture(){counter6 += 1}
-                ConfettiCannon(counter: $counter6, num:1, confettis: [.text("💩")], confettiSize: 20, repetitions: 100, repetitionInterval: 0.1)
+                Text("💵").font(.system(size: 50)).onTapGesture(){counter6 += 1}
+                    .confettiCannon(counter: $counter6, num:1, confettis: [.text("💵"), .text("💶"), .text("💷"), .text("💴")], confettiSize: 30, repetitions: 50, repetitionInterval: 0.1)
             }
             .tabItem {
                 Image(systemName: "umbrella")
-                Text("Constant")
+                Text("Make it Rain!")
             }
             
+            ZStack{
+                Button{
+                    counter7 += 1
+                }label: {
+                    Image(systemName: "paperplane.fill")
+                }
+                .confettiCannon(counter: $counter7, confettis: [.sfSymbol(symbolName: "paperplane.fill")])
+            }
+            .tabItem {
+                Image(systemName: "paperplane")
+                Text("SF Symbols")
+            }
         }
     }
 }
