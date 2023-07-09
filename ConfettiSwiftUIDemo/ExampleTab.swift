@@ -16,6 +16,9 @@ struct ExampleTab: View{
     @State var counter5:Int = 0
     @State var counter6:Int = 0
     @State var counter7:Int = 0
+    @State var counter8:Int = 0
+    @State var counter9:Int = 0
+
     
     var body: some View{
         NavigationView{
@@ -61,7 +64,7 @@ struct ExampleTab: View{
                     Text("💩").font(.system(size: 50)).onTapGesture(){counter6 += 1}
                     ConfettiCannon(counter: $counter6, num:1, confettis: [.text("💩")], confettiSize: 20, repetitions: 100, repetitionInterval: 0.1)
                 }){
-                    Label("Continues", systemImage:"umbrella")
+                    Label("Repeating", systemImage:"umbrella")
                 }
                 
                 NavigationLink(destination: ZStack{
@@ -73,6 +76,28 @@ struct ExampleTab: View{
                 
                 NavigationLink(destination: MultiFireworkView() ){
                     Label("Multiple", systemImage:"person.3")
+                }
+                
+                NavigationLink(destination: ZStack{
+                    Button{
+                        counter8 += 1
+                    }label: {
+                        Image(systemName: "paperplane.fill")
+                    }
+                    .confettiCannon(counter: $counter8, confettis: [.sfSymbol(symbolName: "paperplane.fill")])
+                }){
+                    Label("SF Symbol", systemImage:"paperplane")
+                }
+                
+                NavigationLink(destination: ZStack{
+                    Button{
+                        counter8 += 1
+                    }label: {
+                        Image(systemName: "bitcoinsign.circle")
+                    }
+                    .confettiCannon(counter: $counter9, confettis: [.image("arb"), .image("eth"), .image("btc"), .image("op"), .image("link"), .image("doge")], confettiSize: 20)
+                }){
+                    Label("Image", systemImage:"bitcoinsign.circle")
                 }
                 
             }
