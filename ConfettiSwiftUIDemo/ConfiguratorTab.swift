@@ -152,7 +152,7 @@ struct ConfiguratorPreview: View{
     var body: some View{
         ZStack{
             ConfettiCannon(
-                counter: $counter,
+                trigger: $counter,
                 num: num,
                 confettis: confettis,
                 colors: colors,

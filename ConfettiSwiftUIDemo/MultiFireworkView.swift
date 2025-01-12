@@ -33,19 +33,19 @@ struct MultiFireworkView: View{
                     counter5 += 1
                 }
             }
-            ConfettiCannon(counter: $counter5, num: 80, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 300)
+            ConfettiCannon(trigger: $counter5, num: 80, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 300)
 
             VStack{
                 HStack{
-                    ConfettiCannon(counter: $counter1, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
+                    ConfettiCannon(trigger: $counter1, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
                     Spacer()
-                    ConfettiCannon(counter: $counter2, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
+                    ConfettiCannon(trigger: $counter2, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
                 }
                 Spacer()
                 HStack{
-                    ConfettiCannon(counter: $counter3, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
+                    ConfettiCannon(trigger: $counter3, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
                     Spacer()
-                    ConfettiCannon(counter: $counter4, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
+                    ConfettiCannon(trigger: $counter4, num: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200)
                 }
                 
                 
