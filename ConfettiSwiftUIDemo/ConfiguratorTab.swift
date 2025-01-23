@@ -59,7 +59,7 @@ struct ConfiguratorTab: View{
             .sheet(isPresented: $showSheet){
                 ConfiguratorPreview(num: num, confettis: confettis, colors: colors, confettiSize: confettiSize, rainHeight: rainHeight, fadesOut: fadesOut, opacity: opacity, openingAngle: .degrees(openingAngle), closingAngle: .degrees(closingAngle), radius: radius, repetitions: repetitions, repetitionInterval: repetitionInterval)
             }
-            .navigationTitle("Cofigurator")
+            .navigationTitle("Configurator")
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
